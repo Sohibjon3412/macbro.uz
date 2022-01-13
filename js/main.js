@@ -9,7 +9,7 @@ const elColor = document.querySelector('.price-colorr');
 
 elSliderItem.forEach((item)=> {
   item.addEventListener('click', ()=> {
-    removeActiveSlider();
+    removeActiveSliders();
     item.classList.add('active-slider')
     if(item.id == 1) {
       elSlider.style.transform = "translateX(0)";
@@ -24,7 +24,7 @@ elSliderItem.forEach((item)=> {
     }
   })
 })
-function removeActiveSlider() {
+function removeActiveSliders() {
   elSliderItem.forEach((item)=> {
     item.classList.remove('active-slider');
   });
