@@ -404,12 +404,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #000;
 }
 
 .mac__slider {
   width: 50%;
-  border: 1px solid #000;
 }
 
 .mac__big-img-sec {
