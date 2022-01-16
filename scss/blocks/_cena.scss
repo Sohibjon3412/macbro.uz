@@ -1,0 +1,42 @@
+.cena {
+
+  &__sec {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 42px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__minus {
+  }
+
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #888;
+  }
+
+  &__number {
+    font-size: 17px;
+  }
+
+  &__plus {
+  }
+
+  &__price {
+    font-size: 32px;
+    color: #1d1d1d;
+    font-weight: 600;
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+}

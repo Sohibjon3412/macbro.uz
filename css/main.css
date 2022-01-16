@@ -442,12 +442,12 @@ img {
 }
 
 .mac__slider-img:hover {
-  border: 2px solid #1d1d1d;
+  outline: 2px solid #1d1d1d;
   border-radius: 8px;
 }
 
 .active-slider {
-  border: 2px solid #1d1d1d;
+  outline: 2px solid #1d1d1d;
   border-radius: 8px;
 }
 
@@ -486,14 +486,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.price__color {
-  margin: 8px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .border {
-  width: 100%;
+  width: 31%;
   height: 100%;
   cursor: pointer;
   display: -webkit-box;
@@ -532,7 +532,7 @@ img {
   border-radius: 50%;
   background: #d29d00;
   position: relative;
-  z-index: 1023490723095093852222226534852;
+  z-index: 12;
   top: 10px;
   left: 0;
 }
@@ -544,7 +544,7 @@ img {
   border-radius: 50%;
   background: silver;
   position: relative;
-  z-index: 1023490723095093852222226534852;
+  z-index: 12;
   top: 10px;
   left: 0;
 }
@@ -556,13 +556,12 @@ img {
   border-radius: 50%;
   background: grey;
   position: relative;
-  z-index: 1023490723095093852222226534852;
+  z-index: 12;
   top: 10px;
   left: 0;
 }
 
 .color-border {
-  width: 160px;
   height: 82px;
   cursor: pointer;
   display: -webkit-box;
@@ -582,8 +581,13 @@ img {
   background: transparent;
   outline: 0;
   padding: 0 !important;
-  margin: 8px 8px 30px 0;
+  margin: 8px 8px 20px 0;
   position: relative;
+}
+
+.color-sec {
+  width: 130%;
+  margin-right: 100px;
 }
 
 .divv {
@@ -602,6 +606,60 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.tb1 {
+  display: none;
+}
+
+.flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cena__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 42px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cena__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 26px;
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #888;
+}
+
+.cena__number {
+  font-size: 17px;
+}
+
+.cena__price {
+  font-size: 32px;
+  color: #1d1d1d;
+  font-weight: 600;
+  margin: 20px 0;
+  line-height: 1.5;
 }
 
 .container-fluid,

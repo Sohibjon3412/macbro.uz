@@ -40,6 +40,8 @@
 
   &__price-flex {
     display: flex;
+    // justify-content: space-between;
+    flex-flow: row wrap;
   }
 
   &__ram {
@@ -54,10 +56,6 @@
   &__color-sec {
   }
 
-  &__color {
-    margin: 8px;
-  }
-
   &__color-indicator {
   }
 
@@ -69,13 +67,10 @@
 }
 .price-rom {
 }
-.price-color {
-  // margin: 8px !important;
-  // display: flex;
-  // flex-flow: row wrap;
+.price__color {
 }
 .border {
-  width: 100%;
+  width: 31%;
   height: 100%;
   cursor: pointer;
   display: flex;
@@ -102,7 +97,7 @@
   border-radius: 50%;
   background: rgb(210, 157, 0);
   position: relative;
-  z-index: 1023490723095093852222226534852;
+  z-index: 12;
   top: 10px;  
   left: 0;
 }
@@ -113,7 +108,7 @@
   border-radius: 50%;
   background: silver;
   position: relative;
-  z-index: 1023490723095093852222226534852;
+  z-index: 12;
   top: 10px;  
   left: 0;
 }
@@ -124,41 +119,31 @@
   border-radius: 50%;
   background: grey;
   position: relative;
-  z-index: 1023490723095093852222226534852;
-  top: 10px;  
+  z-index: 12;
+  top: 10px;
   left: 0;
 }
 .color-border {
-  width: 160px;
+  // width: 160px;
   height: 82px;
   cursor: pointer;
   display: flex;
   border-radius: 12px;
   flex-direction: column;
   align-items: center;
-  // justify-content: ;
-  // margin-top: 10px;
   border: 1px solid #888;
   -webkit-transition: .3s;
   transition: .3s;
   background: transparent;
   outline: 0;
   padding: 0 !important;
-  margin: 8px 8px 30px 0;
+  margin: 8px 8px 20px 0;
   position: relative;
 
-  &::before {
-    // content: '';
-    // display: inline-block;
-    // width: 24px;
-    // height: 24px;
-    // border-radius: 50%;
-    // background: rgb(210, 157, 0);
-    // position: absolute;
-    // top: 10%;
-    // left: 50%;
-    // transform: translateX(-50%);
-  }
+}
+.color-sec {
+  width: 130%;
+  margin-right: 100px;
 }
 .divv {
   width: 120px;
@@ -167,4 +152,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.tb1 {
+  display: none;
+}
+.flex {
+  justify-content: space-between;
 }
